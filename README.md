@@ -41,33 +41,3 @@ Feel free to add your own DApp/workload to Diablo by following the [DApp instruc
 [source](https://github.com/NatoliChris/diablo-benchmark/) - [test](http://194.182.162.199)
 
 
-#### Performance
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-<div style="width: 500px;"><canvas id="commit-rate"></canvas></div><br/>
-
-<script>
-  const ctx = document.getElementById('commit-rate');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Avalanche', 'Algorand', 'Diem', 'Ethereum', 'Quorum', 'Redbelly', 'Solana'],
-      datasets: [{
-        label: 'Commit rate (%)',
-        data: [55, 87, 27, 16, 88, 100, 62],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-</script>
-
